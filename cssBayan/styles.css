@@ -162,3 +162,49 @@ span {
 
 /* ========== media ====================== */
 
+@media (hover: hover) {
+    .item__icon {
+        opacity: 0;
+    }
+    .hero__wrap:hover .item__icon {
+        opacity: 1;
+    }
+    .item:hover .item__image {
+        max-height: 100vh;
+        padding: 1.5rem;
+    }
+    .item:hover .item__text {
+        color: #ff4a59;
+    }
+    .item:hover .item__icon {
+        stroke: #ff4a59;
+    }
+    .item:hover .item__header .item__icon.icon__arrow-up {
+        display: block;
+    }
+    .item:hover .item__header .item__icon.icon__arrow-down {
+        display: none;
+    }
+}
+@media (min-width: 820px) {
+    .container {
+        padding: 0 2rem;
+    }
+    .hero__title {
+        font-size: 2.5rem;
+    }
+    .item__header {
+        padding: 1rem 2rem;
+    }
+    .item__text {
+        font-size: 0.875rem;
+    }
+}
+@media (min-width: 1260px) {
+    .hero__title {
+        font-size: 3rem;
+    }
+    .item__text {
+        font-size:1rem;
+    }
+}
